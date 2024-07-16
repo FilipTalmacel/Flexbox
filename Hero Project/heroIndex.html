@@ -3,9 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Banner Example</title>
     <link rel="stylesheet" href="./heroMain.css" />
-    <style></style>
+    <style>
+      * {
+        margin: 0;
+      }
+      .hero {
+        background: url("rndImg.jpg") center/cover fixed no-repeat;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        color: green;
+      }
+      .banner {
+        min-height: 100vh;
+        background: blue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header class="hero">
+      <h1>page title</h1>
+    </header>
+    <div class="banner"></div>
+    <a href="../index.html">back to main</a>
+  </body>
 </html>
